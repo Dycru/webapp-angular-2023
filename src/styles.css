@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image:url(https://j.gifs.com/Q1xW4q.gif) ;
+}
+a{
+    color: rgb(0, 0, 0);
+
+}
+
+h5{
+    color: white;
+}
+
+p{
+    color: white;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
