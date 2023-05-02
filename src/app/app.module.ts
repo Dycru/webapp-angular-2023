@@ -1,4 +1,4 @@
-//librerias de mùdulos
+//librerias de m√≥dulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,8 +12,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { TerminosComponent } from './pages/terminos/terminos.component';
 import { ItemComponent } from './pages/item/item.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 
-//Decorador de mùdulos
+//Decorador de m√≥dulos
 @NgModule({
   //Componentes
   declarations: [
@@ -23,7 +24,8 @@ import { ItemComponent } from './pages/item/item.component';
     AboutComponent,
     PortfolioComponent,
     TerminosComponent,
-    ItemComponent
+    ItemComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,

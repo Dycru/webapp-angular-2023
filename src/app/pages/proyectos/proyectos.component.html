@@ -1,16 +1,30 @@
+
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-      <a routerLink="/item" class="animate__animated animate__fadeIn rk-item ae-masonry__item"
-        ><img src="assets/img/project-1.jpg" alt="" />
+      <a *ngFor="let proyecto of infoService.project" routerLink="/item" class="rk-item ae-masonry__item">
+          <img [src]="proyecto.img" alt="" />
+          <div class="item-meta">
+              <h2>{{ proyecto.h2 }}</h2>
+              <p>{{ proyecto.p }}</p>
+          </div>
+      </a>
+    </div>
+  </section>
+<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <a
+        routerLink="/item"
+        class="animate__animated animate__fadeIn rk-item ae-masonry__item"
+        ><img [src]="infoService.project[0].img" alt="" />
         <div class="item-meta">
-          <h2>Essential Stationery</h2>
-          <p>Branding</p>
+          <h2>{{infoService.project[0].h2}}</h2>
+          <p>{{infoService.project[0].p}}</p>
         </div></a
       ><a routerLink="/item" class="rk-item ae-masonry__item"
-        ><img src="assets/img/project-2.jpg" alt="" />
+        ><img [src]="infoService.project[1].img" alt="" />
         <div class="item-meta">
-          <h2>Pickled Tousled</h2>
-          <p>Art Direction</p>
+          <h2>{{infoService.project[1].h2}}</h2>
+          <p>{{infoService.project[1].p}}</p>
         </div></a
       ><a routerLink="/item" class="rk-item ae-masonry__item"
         ><img src="assets/img/project-3.jpg" alt="" />
